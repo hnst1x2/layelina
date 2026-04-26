@@ -23,16 +23,20 @@
     <a href="#top" class="brand" aria-label="Layelina — Accueil">
       <img src="images/logo.png" alt="Layelina — Salle des fêtes" class="brand-logo" width="180" height="180" />
     </a>
-    <nav class="site-nav" aria-label="Navigation principale">
-      <a href="#histoire">Histoire</a>
-      <a href="#evenements">Événements</a>
-      <a href="#galerie">Galerie</a>
-      <a href="#location">Nous trouver</a>
-      <a href="#contact" class="nav-cta">Réserver</a>
-    </nav>
-    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <button class="nav-toggle" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="nav-panel">
       <span></span><span></span><span></span>
     </button>
+    <div class="nav-panel" id="nav-panel">
+      <nav class="site-nav nav-primary" aria-label="Navigation principale">
+        <a href="#histoire">Histoire</a>
+        <a href="#evenements">Événements</a>
+        <a href="#galerie">Galerie</a>
+      </nav>
+      <nav class="site-nav nav-secondary" aria-label="Réservation et accès">
+        <a href="#location">Nous trouver</a>
+        <a href="#contact" class="nav-cta">Réserver</a>
+      </nav>
+    </div>
   </header>
 
   <main>

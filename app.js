@@ -2,16 +2,16 @@
   const yearEl = document.getElementById('year');
   if (yearEl) yearEl.textContent = new Date().getFullYear();
 
-  const nav = document.querySelector('.site-nav');
+  const panel = document.querySelector('.nav-panel');
   const toggle = document.querySelector('.nav-toggle');
-  if (nav && toggle) {
+  if (panel && toggle) {
     toggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
+      const open = panel.classList.toggle('is-open');
       toggle.setAttribute('aria-expanded', String(open));
     });
-    nav.querySelectorAll('a').forEach(link => {
+    panel.querySelectorAll('a').forEach(link => {
       link.addEventListener('click', () => {
-        nav.classList.remove('is-open');
+        panel.classList.remove('is-open');
         toggle.setAttribute('aria-expanded', 'false');
       });
     });
