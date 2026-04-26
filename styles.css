@@ -128,13 +128,10 @@ h1, h2, h3, h4 {
   align-items: center;
 }
 .brand-logo {
-  height: 54px;
-  width: 180px;
-  object-fit: cover;
-  object-position: center;
+  height: 56px;
+  width: auto;
   display: block;
-  border-radius: 6px;
-  background: #000;
+  filter: drop-shadow(0 2px 6px oklch(22% 0.08 25 / 0.15));
 }
 .visually-hidden {
   position: absolute;
@@ -267,10 +264,11 @@ h1, h2, h3, h4 {
   margin: var(--space-md) 0 var(--space-lg);
 }
 .hero-logo {
-  width: clamp(260px, 48vw, 520px);
+  width: clamp(260px, 50vw, 560px);
   height: auto;
   display: block;
-  filter: drop-shadow(0 12px 40px oklch(82% 0.13 75 / 0.35));
+  filter: drop-shadow(0 16px 50px oklch(22% 0.08 25 / 0.6))
+          drop-shadow(0 0 30px oklch(82% 0.13 75 / 0.25));
 }
 .hero-script {
   font-family: 'Italianno', cursive;
@@ -815,10 +813,10 @@ h1, h2, h3, h4 {
   align-items: flex-start;
 }
 .footer-logo {
-  width: 110px;
-  height: 110px;
+  width: 130px;
+  height: auto;
   display: block;
-  border-radius: 8px;
+  filter: drop-shadow(0 4px 12px oklch(0% 0 0 / 0.3));
 }
 .footer-brand p {
   font-size: var(--text-xs);
@@ -867,7 +865,7 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
-  .brand-logo { height: 44px; width: 140px; }
+  .brand-logo { height: 44px; }
 
   .site-nav {
     position: fixed;
